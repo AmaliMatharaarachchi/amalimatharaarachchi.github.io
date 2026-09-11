@@ -1,0 +1,10 @@
+title: Amali Matharaarachchi
+description: "Notes, ideas, and writing by Amali Matharaarachchi."
+url: "https://amalimatharaarachchi.github.io"
+baseurl: ""
+timezone: Australia/Melbourne
+theme: minima
+permalink: /:year/:month/:day/:title/
+header_pages:
+  - about.md
+markdown: kramdown
