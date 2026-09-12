@@ -6,7 +6,6 @@ layout: default
   <section class="home-hero">
     <p class="home-eyebrow">Research & writing</p>
     <h1>Writing on AI, research, and intelligent systems.</h1>
-    <p class="home-intro">Independent essays and research notes on artificial intelligence, multi-agent systems, scientific discovery, and the technologies shaping modern research.</p>
     <div class="home-actions">
       <a class="home-primary" href="#articles">Browse articles</a>
       <a class="home-secondary" href="{{ '/about/' | relative_url }}">About me</a>
