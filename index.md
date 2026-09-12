@@ -3,18 +3,6 @@ layout: default
 ---
 
 <div class="home-journal">
-  <section class="home-note-hero">
-    <blockquote class="home-note-quote">
-      <p>“I write to find out what I think.”</p>
-      <cite>— Joan Didion</cite>
-    </blockquote>
-    <p class="home-note-intro">Sparse notes, quiet observations, and things jotted down along the way.</p>
-    <div class="home-note-links">
-      <a class="home-note-primary" href="#articles">Browse notes <span aria-hidden="true">→</span></a>
-      <a class="home-note-secondary" href="{{ '/about/' | relative_url }}">About me <span aria-hidden="true">→</span></a>
-    </div>
-  </section>
-
   {% assign latest = site.posts | first %}
   <section class="home-latest-note">
     <div class="home-note-section-head">
@@ -47,6 +35,18 @@ layout: default
         </a>
         {% endunless %}
       {% endfor %}
+    </div>
+  </section>
+
+  <section class="home-note-hero">
+    <blockquote class="home-note-quote">
+      <p>“I write to find out what I think.”</p>
+      <cite>— Joan Didion</cite>
+    </blockquote>
+    <p class="home-note-intro">Sparse notes, quiet observations, and things jotted down along the way.</p>
+    <div class="home-note-links">
+      <a class="home-note-primary" href="#articles">Browse notes <span aria-hidden="true">→</span></a>
+      <a class="home-note-secondary" href="{{ '/about/' | relative_url }}">About me <span aria-hidden="true">→</span></a>
     </div>
   </section>
 </div>
