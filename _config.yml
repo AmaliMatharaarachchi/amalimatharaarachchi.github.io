@@ -8,3 +8,4 @@ permalink: /:year/:month/:day/:title/
 header_pages:
   - about.md
 markdown: kramdown
+google_analytics: G-HXN3EJVD66
