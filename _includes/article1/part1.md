@@ -6,7 +6,7 @@ Viscosity complicates this question because it tends to smooth differences in fl
 
 In 1934, Jean Leray established the existence of generalized, or weak, solutions to the three-dimensional Navier–Stokes equations. The question of global smoothness remained unresolved. In 2000, the Clay Mathematics Institute included the Navier–Stokes existence and smoothness problem among its seven Millennium Prize Problems.
 
-<div class="hero-note"><strong>September 8, 2026.</strong> OpenAI reported that an internal AI system had produced a solution addressing the problem.</div>
+<div class="hero-note"><strong>September 8, 2026.</strong> OpenAI reported that an internal AI system had produced a solution addressing the problem. <a href="https://openai.com/index/navier-stokes-solution/" target="_blank" rel="noopener noreferrer">On the Navier–Stokes Millennium Prize Problem | OpenAI</a></div>
 
 {% include article1/figure1.html %}
 
