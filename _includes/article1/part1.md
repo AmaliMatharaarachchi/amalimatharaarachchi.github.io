@@ -8,7 +8,7 @@ In 1934, Jean Leray established the existence of generalized, or weak, solutions
 
 <div class="hero-note"><strong>September 8, 2026.</strong> OpenAI reported that an internal AI system had produced a solution addressing the problem.</div>
 
-<div class="figure"><div class="figure-title">Figure 1 · The proposed singularity</div><div class="flow"><span>smooth external force</span><b>→</b><span>inward spiral</span><b>→</b><span>axial stretching</span><b>→</b><span>smaller + faster core</span><b>→</b><span>finite-time blowup</span></div><div class="figure-caption">OpenAI's construction involves a vortex that spirals inward while stretching along its axis. The central region becomes progressively smaller and faster while total kinetic energy remains bounded. Conceptual rendering of the article's Figure 1.</div></div>
+{% include article1/figure1.html %}
 
 The proposed construction begins with a fluid at rest and introduces a smooth external force. According to OpenAI, the resulting solution develops finite-time blowup while maintaining bounded kinetic energy. OpenAI states that this construction establishes alternatives C and D in the official formulation of the Millennium Prize Problem.
 
@@ -26,7 +26,7 @@ An AI agent extends this process by allowing the model to interact repeatedly wi
 
 For example, a software-development agent may inspect source code, propose a modification, run tests, observe an error, and revise the implementation. The output is therefore produced through an iterative sequence of model decisions and environmental feedback rather than through a single model response.
 
-<div class="figure"><div class="figure-title">Figure 2 · From model inference to multi-agent research</div><div class="agent-grid"><div class="agent-card"><strong>1 · Model</strong>Answers a question from its context.</div><div class="agent-card"><strong>2 · Single AI Agent</strong>Pursues a goal through repeated planning, tool use and observation.</div><div class="agent-card"><strong>3 · Multi-Agent System</strong>Multiple agents divide an open problem, share findings and synthesize results.</div></div><div class="figure-caption">A language model generates responses, an agent operates through an iterative tool-use loop, and a multi-agent system distributes work across multiple agents working toward a shared objective.</div></div>
+{% include article1/figure2.html %}
 
 A multi-agent system extends this structure by assigning work to multiple agents. Individual agents or groups can investigate different parts of a problem, use tools independently, exchange intermediate findings, and contribute to a shared result.
 
