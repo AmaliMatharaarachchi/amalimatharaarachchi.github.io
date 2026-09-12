@@ -34,7 +34,7 @@ Lean is a formal proof assistant. Mathematical statements and their supporting a
 
 This creates a useful division of functions. Language models can be used to search a large space of possible approaches, propose conjectures, construct candidate arguments, and revise unsuccessful attempts. Formal proof systems can then be used to check whether a formalized argument satisfies explicit logical rules.
 
-<div class="figure"><div class="figure-title">Figure 4 · Discovery and verification</div><div class="agent-grid"><div class="agent-card"><strong>Probabilistic discovery</strong>AI agents explore hypotheses, test ideas and refine candidate arguments.</div><div class="agent-card"><strong>Formalization</strong>The candidate proof is translated into a precise formal representation.</div><div class="agent-card"><strong>Deterministic verification</strong>Lean checks the formal proof inference by inference.</div></div><div class="figure-caption">AI agents generate and refine candidate proofs using probabilistic models. Candidate proofs are then translated into formal representations and checked using deterministic proof-assistant software.</div></div>
+{% include article1/figure4.html %}
 
 <div class="flow"><span>Probabilistic discovery</span><b>→</b><span>formalization</span><b>→</b><span>deterministic verification</span></div>
 
