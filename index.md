@@ -24,11 +24,8 @@ layout: default
         <p>{{ latest.description }}</p>
         <div class="home-read-more">Read article <span aria-hidden="true">→</span></div>
       </div>
-      <div class="home-feature-visual" aria-hidden="true">
-        <div class="home-orbit home-orbit-one"></div>
-        <div class="home-orbit home-orbit-two"></div>
-        <div class="home-orbit home-orbit-three"></div>
-        <div class="home-core"></div>
+      <div class="home-feature-thumbnail">
+        <img src="{{ '/assets/images/article1/figure-1-vortex.png' | relative_url }}" alt="Illustration of the proposed Navier–Stokes singularity" loading="eager">
       </div>
     </a>
   </section>
