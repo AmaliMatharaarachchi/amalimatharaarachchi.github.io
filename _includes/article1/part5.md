@@ -22,17 +22,19 @@ Nevertheless, the experiment provides a useful case study of a change in how AI 
 
 <div class="references">
 
-- OpenAI, *On the Navier–Stokes Millennium Prize Problem* (2026)
-- OpenAI, *Finite Time Blowup for Navier–Stokes* (2026)
-- Anthropic, *Patterns and Problems in Emerging Multiagent Systems* (2026)
-- Anthropic, *Learning More About Claude’s Mathematical Capabilities* (2026)
-- Anthropic, *How We Built Our Multi-Agent Research System* (2025)
-- Clay Mathematics Institute, *Navier–Stokes Equation and Millennium Prize Problem Rules*
-- Quanta Magazine, *AI Has Solved One of Math’s $1 Million Millennium Prize Problems* (2026)
-- Nature, *OpenAI Claims Huge Maths Breakthrough on a Famed ‘Millennium Problem’* (2026)
-- Scientific American, *AI May Have Just Solved a Million-Dollar Math Problem. The Field Will Never Be the Same* (2026)
-- ABC News Australia, *OpenAI Navier–Stokes Millennium Problem* (2026)
-- DataCamp, *Did AI Just Solve Navier–Stokes? What OpenAI’s Claim Actually Proves* (2026)
+1. **OpenAI (2026).** [On the Navier–Stokes Millennium Prize Problem](https://openai.com/index/navier-stokes-solution/) — OpenAI's primary announcement and description of the result and research process.
+
+2. **Anthropic (2026).** [Patterns and problems in emerging multiagent systems](https://www.anthropic.com/research/multiagent-systems) — Experiments on coordination, convergence, information sharing, and other behaviours in multi-agent systems.
+
+3. **Anthropic (2026).** [Learning more about Claude's mathematical capabilities](https://www.anthropic.com/research/riemann-zeta) — Anthropic's report on Claude's work related to the Riemann hypothesis and the improved lower bound.
+
+4. **Anthropic (2025).** [How we built our multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system) — Engineering discussion of Anthropic's orchestrator-worker multi-agent research architecture.
+
+5. **Clay Mathematics Institute.** [Navier–Stokes Equation](https://www.claymath.org/millennium/navier-stokes-equation/) — Official Millennium Prize Problem page and resources.
+
+6. **Clay Mathematics Institute.** [Rules for the Millennium Prize Problems](https://www.claymath.org/millennium-problems/rules/) — Official requirements governing consideration and recognition of proposed solutions.
+
+7. **Nature (2026).** [OpenAI claims huge maths breakthrough on a famed ‘Millennium Problem’](https://www.nature.com/articles/d41586-026-02842-5) — Independent reporting on OpenAI's announced Navier–Stokes result and its mathematical significance.
 
 </div>
 
