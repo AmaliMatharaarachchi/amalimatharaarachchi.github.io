@@ -1,0 +1,1 @@
+<div class="hero-note"><strong>Editorial note.</strong> This article discusses a newly reported mathematical result. Formal verification and publication do not by themselves establish broader mathematical or institutional acceptance; the distinction is central to the analysis above.</div>
