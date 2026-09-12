@@ -21,21 +21,15 @@ Nevertheless, the experiment provides a useful case study of a change in how AI 
 ## References
 
 <div class="references">
-
-1. **OpenAI (2026).** [On the Navier–Stokes Millennium Prize Problem](https://openai.com/index/navier-stokes-solution/) — OpenAI's primary announcement and description of the result and research process.
-
-2. **Anthropic (2026).** [Patterns and problems in emerging multiagent systems](https://www.anthropic.com/research/multiagent-systems) — Experiments on coordination, convergence, information sharing, and other behaviours in multi-agent systems.
-
-3. **Anthropic (2026).** [Learning more about Claude's mathematical capabilities](https://www.anthropic.com/research/riemann-zeta) — Anthropic's report on Claude's work related to the Riemann hypothesis and the improved lower bound.
-
-4. **Anthropic (2025).** [How we built our multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system) — Engineering discussion of Anthropic's orchestrator-worker multi-agent research architecture.
-
-5. **Clay Mathematics Institute.** [Navier–Stokes Equation](https://www.claymath.org/millennium/navier-stokes-equation/) — Official Millennium Prize Problem page and resources.
-
-6. **Clay Mathematics Institute.** [Rules for the Millennium Prize Problems](https://www.claymath.org/millennium-problems/rules/) — Official requirements governing consideration and recognition of proposed solutions.
-
-7. **Nature (2026).** [OpenAI claims huge maths breakthrough on a famed ‘Millennium Problem’](https://www.nature.com/articles/d41586-026-02842-5) — Independent reporting on OpenAI's announced Navier–Stokes result and its mathematical significance.
-
+<ol>
+<li><strong>OpenAI (2026).</strong> <a href="https://openai.com/index/navier-stokes-solution/" target="_blank" rel="noopener noreferrer">On the Navier–Stokes Millennium Prize Problem</a> — OpenAI's primary announcement and description of the result and research process.</li>
+<li><strong>Anthropic (2026).</strong> <a href="https://www.anthropic.com/research/multiagent-systems" target="_blank" rel="noopener noreferrer">Patterns and problems in emerging multiagent systems</a> — Experiments on coordination, convergence, information sharing, and other behaviours in multi-agent systems.</li>
+<li><strong>Anthropic (2026).</strong> <a href="https://www.anthropic.com/research/riemann-zeta" target="_blank" rel="noopener noreferrer">Learning more about Claude's mathematical capabilities</a> — Anthropic's report on Claude's work related to the Riemann hypothesis and the improved lower bound.</li>
+<li><strong>Anthropic (2025).</strong> <a href="https://www.anthropic.com/engineering/multi-agent-research-system" target="_blank" rel="noopener noreferrer">How we built our multi-agent research system</a> — Engineering discussion of Anthropic's orchestrator-worker multi-agent research architecture.</li>
+<li><strong>Clay Mathematics Institute.</strong> <a href="https://www.claymath.org/millennium/navier-stokes-equation/" target="_blank" rel="noopener noreferrer">Navier–Stokes Equation</a> — Official Millennium Prize Problem page and resources.</li>
+<li><strong>Clay Mathematics Institute.</strong> <a href="https://www.claymath.org/millennium-problems/rules/" target="_blank" rel="noopener noreferrer">Rules for the Millennium Prize Problems</a> — Official requirements governing consideration and recognition of proposed solutions.</li>
+<li><strong>Nature (2026).</strong> <a href="https://www.nature.com/articles/d41586-026-02842-5" target="_blank" rel="noopener noreferrer">OpenAI claims huge maths breakthrough on a famed ‘Millennium Problem’</a> — Independent reporting on OpenAI's announced Navier–Stokes result and its mathematical significance.</li>
+</ol>
 </div>
 
 ## Disclosure
