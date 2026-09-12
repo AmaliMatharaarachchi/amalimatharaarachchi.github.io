@@ -4,26 +4,26 @@ layout: default
 
 <div class="home-editorial">
   <section class="home-hero">
-    <p class="home-eyebrow">Independent research notes</p>
-    <h1>AI, research systems, and the ideas changing how knowledge gets made.</h1>
-    <p class="home-intro">Long-form writing on artificial intelligence, multi-agent systems, mathematical research, verification, and scientific discovery.</p>
+    <p class="home-eyebrow">Research & writing</p>
+    <h1>Writing on AI, research, and intelligent systems.</h1>
+    <p class="home-intro">Independent essays and research notes on artificial intelligence, multi-agent systems, scientific discovery, and the technologies shaping modern research.</p>
     <div class="home-actions">
-      <a class="home-primary" href="#latest">Read the latest essay</a>
-      <a class="home-secondary" href="{{ '/about/' | relative_url }}">About</a>
+      <a class="home-primary" href="#articles">Browse articles</a>
+      <a class="home-secondary" href="{{ '/about/' | relative_url }}">About me</a>
     </div>
   </section>
 
   <section class="home-feature" id="latest">
     {% assign latest = site.posts | first %}
     <div class="home-feature-meta">
-      <span>Latest essay</span>
+      <span>Latest article</span>
       <span>{{ latest.date | date: "%d %B %Y" }}</span>
     </div>
     <a class="home-feature-card" href="{{ latest.url | relative_url }}">
       <div class="home-feature-copy">
         <h2>{{ latest.title }}</h2>
         <p>{{ latest.description }}</p>
-        <div class="home-read-more">Read essay <span aria-hidden="true">→</span></div>
+        <div class="home-read-more">Read article <span aria-hidden="true">→</span></div>
       </div>
       <div class="home-feature-visual" aria-hidden="true">
         <div class="home-orbit home-orbit-one"></div>
@@ -34,34 +34,10 @@ layout: default
     </a>
   </section>
 
-  <section class="home-topics">
+  <section class="home-archive" id="articles">
     <div class="home-section-heading">
-      <p class="home-eyebrow">Themes</p>
-      <h2>What I write about</h2>
-    </div>
-    <div class="home-topic-grid">
-      <div class="home-topic">
-        <span class="home-topic-number">01</span>
-        <h3>AI research systems</h3>
-        <p>How models, tools, agents, and verification systems are being assembled into new research workflows.</p>
-      </div>
-      <div class="home-topic">
-        <span class="home-topic-number">02</span>
-        <h3>Multi-agent coordination</h3>
-        <p>Parallelism, specialization, communication, synthesis, and the limits of scaling research through many agents.</p>
-      </div>
-      <div class="home-topic">
-        <span class="home-topic-number">03</span>
-        <h3>Scientific discovery</h3>
-        <p>What AI-assisted mathematics and formal verification reveal about reliability, attribution, and discovery.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="home-archive">
-    <div class="home-section-heading">
-      <p class="home-eyebrow">Archive</p>
-      <h2>Writing</h2>
+      <p class="home-eyebrow">Articles</p>
+      <h2>All writing</h2>
     </div>
     <div class="home-post-list">
       {% for post in site.posts %}
