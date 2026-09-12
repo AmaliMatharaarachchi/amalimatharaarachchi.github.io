@@ -24,7 +24,7 @@ OpenAI's published description indicates that its research process introduced so
 
 This suggests an architecture based not only on parallel exploration, but on repeatedly collecting useful findings and using them to redirect subsequent research.
 
-<div class="figure"><div class="figure-title">Figure 3 · Reconstructing the research architecture</div><div class="flow"><span>problem</span><b>→</b><span>parallel agent groups</span><b>→</b><span>tools + cached web</span><b>→</b><span>intermediate findings</span><b>→</b><span>synthesis</span><b>→</b><span>cross-pollination</span><b>→</b><span>further exploration</span></div><div class="figure-caption">Based on OpenAI's published description. Agents explored different formulations and related problems in parallel; intermediate results were consolidated and fed into later research. This is a reconstruction from the public account, not a representation of the undisclosed internal implementation.</div></div>
+{% include article1/figure3.html %}
 
 The architecture can be summarized as an iterative process:
 
