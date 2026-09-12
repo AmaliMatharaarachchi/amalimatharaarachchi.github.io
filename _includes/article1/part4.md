@@ -1,39 +1,65 @@
-## From Benchmark Problems to Open Research Problems
+## From Known Answers to Open-Ended Tasks
 
-Most evaluations of mathematical capability in AI have historically used problems for which a correct answer is already available.
+Many AI evaluations use problems for which a correct answer is already available.
 
-Examples include examinations, mathematical competitions, benchmark datasets, and programming problems with testable outputs. Performance can be measured by comparing model responses with a known solution or evaluation criterion.
+Examples include examinations, benchmark datasets, mathematical competitions, and programming problems with testable outputs. Performance can be measured by comparing a model's response with a known solution or evaluation criterion.
 
-Open research problems differ because the correct result is not known in advance.
+Open-ended agent tasks are different because the correct result, sequence of actions, or even the appropriate stopping point may not be known in advance.
 
-An AI system working on such a problem must therefore perform functions that are not fully captured by conventional benchmark evaluation. These include selecting research directions, exploring alternatives, identifying unsuccessful approaches, incorporating intermediate results, checking consistency, and producing an output that can be independently evaluated.
+An agent working in this setting must decide what to investigate, which tools to use, when to abandon an approach, what information to retain, whether another agent's output is trustworthy, and when the task is complete.
 
-The Anthropic and OpenAI experiments provide examples of systems being applied in this setting. They suggest that agent-based systems can contribute to research problems for which no predetermined answer is available.
+This changes the evaluation problem.
 
-The scope of this conclusion should remain limited. Mathematics provides several properties that are favourable to agent-based research. Problems can often be stated precisely, relevant literature is available digitally, computational experiments can be performed relatively cheaply, and formal proof assistants can provide strong forms of mechanical verification.
+It is relatively straightforward to evaluate a model when an answer key exists. It is considerably harder to evaluate an autonomous system operating over hundreds or thousands of actions when failures can occur anywhere in the trajectory.
 
-These conditions are not present to the same extent in many empirical sciences. Experimental biology, medicine, social science, and other fields may require physical experiments, uncertain measurements, human participants, or forms of interpretation that cannot be reduced to formal verification.
+The OpenAI and Anthropic experiments provide useful examples of this problem at unusually large scale. They show that agent capability depends not only on the intelligence of the underlying model, but also on the infrastructure surrounding it.
 
-The mathematical examples therefore demonstrate a particular form of agentic research rather than a general solution to autonomous scientific discovery.
+## Takeaways for Building Agent Systems
 
-## Implications for Research
+The Navier–Stokes experiment highlights several issues that extend well beyond mathematics.
 
-Multi-agent research systems introduce several potential advantages and limitations.
+The first is **coordination**.
 
-One advantage is the ability to parallelize exploration. Multiple agents can investigate alternative hypotheses simultaneously. Additional agents can be assigned to promising branches, while other agents can be used for criticism, validation, literature review, or independent reproduction.
+OpenAI did not simply run many identical agents against the same prompt. Different groups were assigned different objectives, intermediate findings were consolidated, and useful results were redistributed into later work.
 
-Software agents can also exchange intermediate results more rapidly than conventional research teams, and computational resources can be reassigned during a project. OpenAI's reported use of the Euler result as context for later Navier–Stokes work provides one example of this process.
+Anthropic's experiments show why this matters. Increasing the number of agents does not ensure effective collaboration. Agents can duplicate work, converge prematurely on the same approach, fail to communicate important information, or create dependencies that other agents cannot resolve.
 
-However, several limitations remain.
+The second issue is **correlated reasoning**.
 
-**Correlated reasoning** is one concern. Multiple instances of the same underlying model do not constitute independent researchers in the same sense as people with different training, assumptions, and intellectual backgrounds. Similar models may reproduce similar errors or converge on similar approaches.
+Multiple instances of the same underlying model are not equivalent to independent thinkers. If they share similar training, prompts, context, and reasoning tendencies, they may reproduce the same assumptions and the same errors.
 
-**Coordination** is another limitation. As Anthropic's experiments indicate, increasing the number of agents does not ensure effective collaboration. Information must be selected, communicated, and integrated without producing excessive redundancy or premature convergence.
+This creates an important design question for multi-agent systems: how should genuine diversity be introduced?
 
-**Provenance and attribution** also become more difficult. AI research systems operate using existing scientific literature, model training data, tool outputs, human prompts, and intermediate results generated by other agents. Determining the contribution of each source may therefore require more explicit mechanisms for tracing information and intellectual dependencies.
+OpenAI's experiment provides one possible answer. Different groups were deliberately assigned different formulations of the problem and encouraged to pursue different approaches. Diversity was introduced through the architecture rather than assumed to emerge automatically from scale.
 
-This issue is relevant to the Navier–Stokes case. The surrounding mathematical work includes earlier research by Diego Córdoba and Luis Martínez-Zoroa and subsequent work by Tristan Buckmaster and Levent Alpöge. Questions concerning priority and information flow have consequently formed part of the discussion around the OpenAI result. These issues should be separated from the technical question of whether the proof itself is correct.
+The third issue is **evaluation**.
 
-**Computational access** is an additional consideration. Large-scale multi-agent research can require substantial computational resources. If research performance depends increasingly on the ability to operate large populations of frontier models over extended periods, access to such systems may become an important factor in determining who can conduct this form of research.
+Agents need mechanisms for determining whether their work is actually succeeding. In the Navier–Stokes case, Lean provided an unusually strong verification layer. Most agent applications will not have an equivalent.
 
-Finally, **formal correctness and scientific understanding are not equivalent**. A proof may be formally verified while its broader conceptual interpretation remains under study. Mathematical research involves both establishing results and developing explanations that relate those results to existing theory. AI-assisted discovery may alter the rate at which these two activities occur.
+That makes the design of evaluators, tests, constraints, and feedback loops a central part of agent engineering rather than something that can be added after the system has been built.
+
+Human oversight remains important for the same reason.
+
+Humans in agent systems do not necessarily need to approve every individual action. At sufficiently large scale that would defeat much of the purpose of automation. Instead, human involvement can move to higher-leverage points: defining objectives, setting constraints, reviewing unusual behaviour, deciding when evidence is sufficient, resolving ambiguity, and determining whether an output should be trusted or acted upon.
+
+The fourth issue is **context management**.
+
+OpenAI's system did not merely generate intermediate results. Useful discoveries were incorporated into later prompts, allowing subsequent agents to build on work produced earlier in the run.
+
+This creates another engineering problem: deciding what information should enter an agent's context.
+
+Too little information and agents repeatedly rediscover the same things. Too much information and context becomes noisy, expensive, and potentially misleading. Multi-agent systems therefore need mechanisms for selecting, compressing, ranking, and distributing useful intermediate knowledge.
+
+The fifth issue is **resource allocation**.
+
+OpenAI redirected resources toward Navier–Stokes after progress on the related Euler problem made that direction appear more promising. The system therefore changed how computation was allocated based on evidence generated during the run.
+
+This suggests that orchestration is not simply about assigning tasks at the beginning. A capable agent system may need to continually decide which branches deserve more computation, which should be terminated, and where new agents should be created.
+
+Finally, there is **misalignment**.
+
+As agents become more autonomous, failures do not have to take the form of an obviously malicious action. An agent can faithfully optimize the wrong interpretation of an objective, continue pursuing a strategy after it has stopped being useful, communicate misleading information to another agent, or satisfy a local objective while undermining the broader system.
+
+In a multi-agent environment these problems can compound. One agent's incorrect assumption can become another agent's context, and eventually a system-level conclusion.
+
+The problem is therefore not simply whether individual agents are aligned with an instruction. It is whether the behaviour that emerges from their interaction remains aligned with the objective of the system.
